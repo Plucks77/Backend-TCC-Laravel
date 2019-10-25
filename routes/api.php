@@ -12,4 +12,6 @@ Route::post('/login', 'Api\Auth\LoginController@login');
 
 Route::post('/logout', 'Api\Auth\LoginController@logout');
 
-Route::post('evento', 'EventoController@evento' );
+Route::post('/evento', 'EventoController@evento' );
+
+Route::get('/eventos', 'EventoController@index' );

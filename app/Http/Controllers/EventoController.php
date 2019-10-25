@@ -21,4 +21,10 @@ class EventoController extends Controller
         }        
 
     }
+
+    public function index()
+    {
+        $eventos = evento::get();
+        return response()->json(["Data"=>$eventos], 200);
+    }
 }
